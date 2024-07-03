@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: height 0.4s ease;
+  height: 10.3%;
+}
+.navbar.shrink {
+  height: 8%;
+}
+.brand {
+  margin-left: 2%;
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.menu a:hover {
+  background-color: rgb(44, 42, 42);
+  color: #e41232;
+  transition: ease-in-out 0.4s;
+}
