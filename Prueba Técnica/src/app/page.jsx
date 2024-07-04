@@ -15,16 +15,22 @@ export default function Home() {
         </Suspense>
       </header>
       <section id="sobre-mi">
-        <SobreMi />
+        <Suspense fallback={<Loading />}>
+          <SobreMi />
+        </Suspense>
       </section>
       <section className={styles.section} id="mis-intereses">
-        <div className={styles.div}>
-          <MisIntereses />
-        </div>
+        <Suspense fallback={<Loading />}>
+          <div className={styles.div}>
+            <MisIntereses />
+          </div>
+        </Suspense>
       </section>
-      <footer className={styles.footer} id="contacto">
-        <Contacto />
-      </footer>
+      <Suspense fallback={<Loading />}>
+        <footer className={styles.footer} id="contacto">
+          <Contacto />
+        </footer>
+      </Suspense>
     </main>
   );
 }

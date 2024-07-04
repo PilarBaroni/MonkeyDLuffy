@@ -1,19 +1,19 @@
 .header {
   margin: 0 2%;
 }
-.body{
-    background-color: whitesmoke;
-    margin: 0px;
+.body {
+  background-color: whitesmoke;
+  margin: 0px;
 }
 
-.section{
+.section {
   background-color: white;
   padding: 2%;
 }
-.div{
+.div {
   width: 70%;
   align-items: center;
   margin: 0 auto;
 }
-.footer{
+.footer {
 }

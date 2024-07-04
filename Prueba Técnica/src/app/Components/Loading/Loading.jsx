@@ -1,7 +1,9 @@
+import Image from "next/image";
+import Load from "../../../../public/customers/Loading.gif";
 export const Loading = () => {
-    return (
-        <div>
-            Cargando...
-        </div>
-    );
-}
+  return (
+    <div>
+      <Image src={Load} alt="Cargando..." />
+    </div>
+  );
+};

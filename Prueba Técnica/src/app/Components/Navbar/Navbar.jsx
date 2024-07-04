@@ -24,7 +24,11 @@ export const Navbar = () => {
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
-        if (element && element.offsetTop <= scrollPos && element.offsetTop + element.offsetHeight > scrollPos) {
+        if (
+          element &&
+          element.offsetTop <= scrollPos &&
+          element.offsetTop + element.offsetHeight > scrollPos
+        ) {
           currentSection = section;
         }
       });

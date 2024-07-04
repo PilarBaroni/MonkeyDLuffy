@@ -1,116 +1,117 @@
 .carrousel {
-    width: 100%;
-    max-width: 120em;
-    padding: 2em;
-    background-color: whitesmoke;
-    overflow: hidden;
-    align-items: center;
-    margin: 2% auto;
-    position: relative;
+  width: 100%;
+  max-width: 120em;
+  padding: 2em;
+  background-color: whitesmoke;
+  overflow: hidden;
+  align-items: center;
+  margin: 2% auto;
+  position: relative;
 }
 
 .titulo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3em;
-    color: #dd213e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  color: #dd213e;
 }
 
 .grande {
-    width: 480%; 
-    display: flex;
-    transition: transform 0.5s ease; 
-    padding: 3%;
-    justify-content: space-around;
+  width: 480%;
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 3%;
+  justify-content: space-around;
 }
 
 .imgContainer {
-    position: relative;
-    width: calc(90% / 5 - 5em); 
-    overflow: hidden; 
-    cursor: pointer;
+  position: relative;
+  width: calc(90% / 5 - 5em);
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .img {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39);   
-    filter: brightness(.3);
-    transition: 0.5s ease-in-out; 
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39);
+  filter: brightness(0.3);
+  transition: 0.5s ease-in-out;
 }
 
 .imgContainer:hover .img {
-    filter: brightness(100%);
-    transition: 0.5s ease-in-out; 
+  filter: brightness(100%);
+  transition: 0.5s ease-in-out;
 }
 .imgName {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #e9b965;
-    font-size: 3em;
-    text-align: center;
-    transition: opacity 0.5s ease; 
-    z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e9b965;
+  font-size: 3em;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
 }
 
 .imgContainer:hover .imgName {
-    opacity: 0; 
+  opacity: 0;
 }
 
 .puntos {
-    width: 100%;
-    margin: -.8em 0 0;
-    padding: 0.4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  margin: -0.8em 0 0;
+  padding: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .punto {
-    width: 1em;
-    height: 1em;
-    margin: 0.2em;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39);
-    border-radius: 50%;
-    background-color: gray;
-    cursor: pointer;
+  width: 1em;
+  height: 1em;
+  margin: 0.2em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
 }
 
 .activo {
-    background-color: orange;
+  background-color: orange;
 }
-.arrowLeft, .arrowRight {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3em;
-    color: #dd213e;
-    cursor: pointer;
-    user-select: none;
-    z-index: 1000;
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  color: #dd213e;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
 }
 
 .arrowLeft {
-    left: 1em;
+  left: 1em;
 }
 
 .arrowRight {
-    right: 1em;
+  right: 1em;
 }
 .arrowLeft:hover {
-    transform: translateY(-50%) translateX(-5px) scale(1.5);
-    color: orange;
-    transition: 0.5s ease-in-out;
-    transform: .5s ease-in-out;
+  transform: translateY(-50%) translateX(-5px) scale(1.5);
+  color: orange;
+  transition: 0.5s ease-in-out;
+  transform: 0.5s ease-in-out;
 }
 
 .arrowRight:hover {
-    transform: translateY(-50%) translateX(5px) scale(1.5);
-    color: orange;
-    transition: 0.5s ease-in-out;
-    transform: .5s ease-in-out;
+  transform: translateY(-50%) translateX(5px) scale(1.5);
+  color: orange;
+  transition: 0.5s ease-in-out;
+  transform: 0.5s ease-in-out;
 }

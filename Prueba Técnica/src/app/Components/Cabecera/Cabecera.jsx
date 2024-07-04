@@ -11,7 +11,6 @@ export const Cabecera = () => {
           <span className={`${AbrilFatface.className} ${styles.subtitle}`}>
             Capitán y fundador de los Piratas de Sombrero de Paja
           </span>
-          
         </h1>
         <div className={styles.arrowDown}></div>
       </div>
