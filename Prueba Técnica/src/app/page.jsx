@@ -9,22 +9,21 @@ import { MisIntereses } from "./Components/MisIntereses/MisIntereses";
 export default function Home() {
   return (
     <main>
-      <header className={styles.header}>
+      <header className={styles.header} id="home">
         <Suspense fallback={<Loading />}>
           <Cabecera />
         </Suspense>
       </header>
-      <section>
-        <SobreMi/>
+      <section id="sobre-mi">
+        <SobreMi />
       </section>
-      <section className={styles.section}>
+      <section className={styles.section} id="mis-intereses">
         <div className={styles.div}>
-          <MisIntereses/>
+          <MisIntereses />
         </div>
-        
       </section>
-      <footer className={styles.footer}>
-        <Contacto/>
+      <footer className={styles.footer} id="contacto">
+        <Contacto />
       </footer>
     </main>
   );

@@ -8,6 +8,7 @@ import { SideBar } from "../SideBar/SideBar";
 
 export const Navbar = () => {
   const [isShrunk, setIsShrunk] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,19 @@ export const Navbar = () => {
       } else {
         setIsShrunk(false);
       }
+
+      const sections = ["home", "sobre-mi", "mis-intereses", "contacto"];
+      const scrollPos = window.scrollY + window.innerHeight / 2;
+      let currentSection = "home";
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element && element.offsetTop <= scrollPos && element.offsetTop + element.offsetHeight > scrollPos) {
+          currentSection = section;
+        }
+      });
+
+      setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,6 +37,10 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleLinkClick = (section) => {
+    document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -36,20 +54,44 @@ export const Navbar = () => {
         </div>
         <ul className={styles.menu}>
           <li>
-            <a href="#">Home</a>
+            <a
+              href="#home"
+              className={activeSection === "home" ? styles.active : ""}
+              onClick={() => handleLinkClick("home")}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">Sobre mí</a>
+            <a
+              href="#sobre-mi"
+              className={activeSection === "sobre-mi" ? styles.active : ""}
+              onClick={() => handleLinkClick("sobre-mi")}
+            >
+              Sobre mí
+            </a>
           </li>
           <li>
-            <a href="#">Mis intereses</a>
+            <a
+              href="#mis-intereses"
+              className={activeSection === "mis-intereses" ? styles.active : ""}
+              onClick={() => handleLinkClick("mis-intereses")}
+            >
+              Mis intereses
+            </a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a
+              href="#contacto"
+              className={activeSection === "contacto" ? styles.active : ""}
+              onClick={() => handleLinkClick("contacto")}
+            >
+              Contacto
+            </a>
           </li>
         </ul>
       </nav>
-      <SideBar/>
+      <SideBar />
     </div>
   );
 };

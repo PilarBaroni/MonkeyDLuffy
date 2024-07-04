@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 110vh;
 }
 
 .imageWrapper {
@@ -26,11 +26,12 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0% 30%;
   text-align: center;
-  color: white;
+  color: #e9b965;
   width: 20%;
 }
 .title {
   font-size: 4rem;
+
 }
 
 .subtitle {
@@ -43,8 +44,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 65%;
-  background-color: rgba(128, 128, 128, 0.801);
-  border: 0 solid #41393ab9; 
+  background-color:#c29343ef;
+  border: 0 solid rgba(0, 0, 0, 0.7); 
   border-left-width: 2px; 
   border-right-width: 10px; 
   border-bottom-width: 10px;
@@ -57,17 +58,18 @@
 }
 
 .button {
-  background-color: #585353; 
+  background-color: #3a2d17; 
   color: rgb(0, 0, 0); 
   padding: 10px 20px; 
   border-radius: 5px; 
   text-decoration: none; 
   font-size: 1rem; 
   display: inline-block;
-  
+  transition: ease-in-out 0.5s;
 }
 
 .button:hover {
   color: white;
   transition: ease-in-out 0.5s;
+  background-color:#c29343ef;
 }
