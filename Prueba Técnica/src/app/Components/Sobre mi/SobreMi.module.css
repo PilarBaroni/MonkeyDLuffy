@@ -72,3 +72,73 @@
   transition: ease-in-out 0.5s;
   background-color: #c29343ef;
 }
+@media (max-width: 1440px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .buttonContainer {
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    margin-top: 4%;
+    font-size: 0.96rem;
+    width: 74%;
+  }
+  .buttonContainer {
+    display: none;
+  }
+
+  .image {
+    width: 103%;
+  }
+  .container {
+    height: 100vh;
+  }
+}
+@media (max-width: 425px) {
+  .title {
+    font-size: 2rem;
+  }
+  .overlay {
+    width: 50%;
+    padding: 0% 10%;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    width: 130%;
+    left: 90%;
+    margin-top: 12%;
+  }
+  .image {
+    width: 120vh;
+    height: 90vh;
+  }
+  .container {
+    height: 200vh;
+  }
+}
+@media (max-width: 375px) {
+  .subtitle {
+    width: 180%;
+    left: 110%;
+  }
+  .container {
+    height: 250vh;
+  }
+}

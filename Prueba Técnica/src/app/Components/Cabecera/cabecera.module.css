@@ -70,3 +70,81 @@
     transform: rotate(-45deg) translateY(20px);
   }
 }
+@media (max-width: 1117px) {
+  .title {
+    font-size: 6rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    width: 140vh;
+  }
+}
+@media (max-width: 896px) {
+  .title {
+    font-size: 5rem;
+    width: 120vh;
+  }
+}
+@media (max-width: 822px) {
+  .title {
+    font-size: 4rem;
+    width: 80vh;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .container {
+    margin-left: 1.5%;
+  }
+}
+@media (max-width: 790px) {
+  .container {
+    width: 47rem;
+  }
+}
+@media (max-width: 706px) {
+  .container {
+    height: 120vh;
+  }
+}
+@media (max-width: 612px) {
+  .container {
+    height: 140vh;
+  }
+}
+@media (max-width: 522px) {
+  .container {
+    height: 160vh;
+  }
+  .overlay {
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 5rem;
+    width: 90vh;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    height: 180vh;
+  }
+  .overlay {
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 6rem;
+    width: 100vh;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    height: 190vh;
+  }
+}

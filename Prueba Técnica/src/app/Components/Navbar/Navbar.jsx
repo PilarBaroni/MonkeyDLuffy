@@ -9,6 +9,7 @@ import { SideBar } from "../SideBar/SideBar";
 export const Navbar = () => {
   const [isShrunk, setIsShrunk] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,16 +35,25 @@ export const Navbar = () => {
       });
 
       setActiveSection(currentSection);
+
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   const handleLinkClick = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -54,9 +64,24 @@ export const Navbar = () => {
         }`}
       >
         <div className={styles.brand}>
-          <Image src={LogoLuffy} alt="Logo" width={70} height={55} />
+          <Image
+            src={LogoLuffy}
+            alt="Logo"
+            width={70}
+            height={55}
+            className={styles.logo}
+          />
         </div>
-        <ul className={styles.menu}>
+        <div className={styles.hamburgerMenu} onClick={toggleMenu}>
+          <div
+            className={`${styles.hamburger} ${isMenuOpen ? styles.open : ""}`}
+          >
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+            <div className={styles.line}></div>
+          </div>
+        </div>
+        <ul className={`${styles.menu} ${isMenuOpen ? styles.openMenu : ""}`}>
           <li>
             <a
               href="#home"

@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(245, 245, 245, 0.459);
-  padding: 10px;
-  z-index: 1000;
+  padding: .5%;
+  z-index: 500;
 }
 .icon {
   margin: 15px 0;
@@ -19,4 +19,16 @@
   border-radius: 20%;
   transform: scale(1.1);
   transition: ease-in-out 0.4s;
+}
+@media (max-width: 770px) {
+  .sidebar {
+    right: auto;
+    left: 0; 
+    width: 4%;
+  }
+}
+@media (max-width: 425px) {
+  .sidebar {
+    width: 3%;
+  }
 }
