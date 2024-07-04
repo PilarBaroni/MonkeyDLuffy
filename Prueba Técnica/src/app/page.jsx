@@ -3,6 +3,7 @@ import { Cabecera } from "./Components/Cabecera/Cabecera";
 import { Loading } from "./Components/Loading/Loading";
 import styles from "./index.module.css";
 import { SobreMi } from "./Components/Sobre mi/SobreMi";
+import { Contacto } from "./Components/Contacto/Contacto";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       <section>
         <SobreMi/>
       </section>
-      <footer>Hola</footer>
+      <footer className={styles.footer}>
+        <Contacto/>
+      </footer>
     </main>
   );
 }

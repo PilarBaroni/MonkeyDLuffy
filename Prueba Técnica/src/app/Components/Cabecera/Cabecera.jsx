@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { monserrat, LilitaOne } from "../Fonts/fonts";
+import { monserrat, LilitaOne, AbrilFatface } from "../Fonts/fonts";
 import styles from "./cabecera.module.css";
 import luffyCabecera from "../../../../public/customers/luffyCabecera.gif";
 export const Cabecera = () => {
@@ -8,7 +8,7 @@ export const Cabecera = () => {
       <div className={styles.overlay}>
         <h1 className={`${LilitaOne.className} ${styles.title}`}>
           Monkey <span>D</span> Luffy <br />
-          <span className={`${monserrat.className} ${styles.subtitle}`}>
+          <span className={`${AbrilFatface.className} ${styles.subtitle}`}>
             Capitán y fundador de los Piratas de Sombrero de Paja
           </span>
           

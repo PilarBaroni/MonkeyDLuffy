@@ -1,0 +1,94 @@
+.contactSection {
+  background-color: #e9b965;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.containerContact {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image {
+  width: 70%;
+  height: auto;
+  align-self: flex-end;
+}
+
+.contactForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  padding: 0 2%;
+}
+.contactForm h1 {
+  font-size: 3em;
+  color: #e9b965;
+}
+.contactForm h4 {
+  color: #d61431d3;
+}
+.exclamacion {
+  font-size: 2em;
+  color: #d61431;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin-top: 2em;
+}
+
+.inputGroup {
+    width: 100%;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    padding: 1em;
+    margin-bottom: 10%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e9b965;
+    color: #d61431;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  .inputGroup textarea {
+    height: 150px;
+    color: #e9b965;
+    padding: 1.5em;
+    border: 1px solid #d61431;
+    font-size: 1.1em;
+  }
+  
+  .inputGroup.errorGroup input,
+  .inputGroup.errorGroup textarea {
+    margin-bottom: 0;
+  }
+
+.btnSubmit {
+  color: #979797;
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: #d61431;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btnSubmit:hover {
+  color: white;
+}
+.error {
+    color: red;
+    font-size: 0.8em;
+  }

@@ -1,4 +1,4 @@
-import { Montserrat, Margarine, Lilita_One } from "next/font/google";
+import { Montserrat, Margarine, Lilita_One, Abril_Fatface } from "next/font/google";
 
 export const monserrat = Montserrat({
   subsets: ["latin"],
@@ -17,3 +17,9 @@ export const LilitaOne = Lilita_One({
   weight: "400",
   variable: "--font-lilita",
 });
+
+export const AbrilFatface = Abril_Fatface({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-abril",
+})

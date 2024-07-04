@@ -30,8 +30,7 @@
 }
 
 .subtitle {
-  font-size: 1.4rem;
-  color: #888;
+  font-size: 1.5rem;
 }
 
 .imageWrapper {
@@ -68,6 +67,6 @@
     transform: rotate(-45deg) translateY(0);
   }
   50% {
-    transform: rotate(-45deg) translateY(20px); /* Mueve hacia abajo */
+    transform: rotate(-45deg) translateY(20px);
   }
 }
