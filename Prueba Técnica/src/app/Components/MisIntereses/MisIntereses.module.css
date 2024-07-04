@@ -130,3 +130,23 @@
 
 
 }
+@media (max-width: 768px) {
+  .carrousel {
+    width: 280%;
+    right: 45%;
+  }
+  .arrowLeft,
+  .arrowRight {
+  display: none;
+  }
+  .punto{
+    height: 2em;
+    width: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .carrousel {
+    width: 350%;
+    right: 60%;
+  }
+}

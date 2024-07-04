@@ -19,6 +19,13 @@
 }
 @media (max-width: 768px) {
   .div {
-   
+   padding: 10%;
+  }
+}
+@media (max-width: 425px) {
+  .div {
+   padding: 10%;
+   height: 150vh;
+
   }
 }
