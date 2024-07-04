@@ -31,7 +31,6 @@
 }
 .title {
   font-size: 4rem;
-
 }
 
 .subtitle {
@@ -58,7 +57,7 @@
 }
 
 .button {
-  background-color: #d7dce2e7; 
+  background-color: #585353; 
   color: rgb(0, 0, 0); 
   padding: 10px 20px; 
   border-radius: 5px; 
@@ -70,6 +69,5 @@
 
 .button:hover {
   color: white;
-  background-color: #41393a;
   transition: ease-in-out 0.5s;
 }

@@ -2,6 +2,7 @@
   background-color: #e9b965;
   width: 85%;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 .containerContact {
@@ -10,6 +11,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  height: 87vh;
 }
 
 .image {
@@ -25,13 +27,16 @@
   align-items: flex-start;
   background-color: white;
   padding: 0 2%;
+  height: 87vh;
 }
 .contactForm h1 {
   font-size: 3em;
   color: #e9b965;
+  margin: 0;
 }
 .contactForm h4 {
-  color: #d61431d3;
+  color: #e9b965;
+  margin: 0;
 }
 .exclamacion {
   font-size: 2em;
@@ -47,33 +52,33 @@
 }
 
 .inputGroup {
-    width: 100%;
-  }
-  
-  .inputGroup input,
-  .inputGroup textarea {
-    padding: 1em;
-    margin-bottom: 10%;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #e9b965;
-    color: #d61431;
-    width: 100%;
-    font-size: 1em;
-  }
-  
-  .inputGroup textarea {
-    height: 150px;
-    color: #e9b965;
-    padding: 1.5em;
-    border: 1px solid #d61431;
-    font-size: 1.1em;
-  }
-  
-  .inputGroup.errorGroup input,
-  .inputGroup.errorGroup textarea {
-    margin-bottom: 0;
-  }
+  width: 100%;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 1em;
+  margin-bottom: 10%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e9b965;
+  color: #e9b965;
+  width: 100%;
+  font-size: 1em;
+}
+
+.inputGroup textarea {
+  height: 150px;
+  color: #e9b965;
+  padding: 1.5em;
+  border: 1px solid #d61431;
+  font-size: 1.1em;
+}
+
+.inputGroup.errorGroup input,
+.inputGroup.errorGroup textarea {
+  margin-bottom: 0;
+}
 
 .btnSubmit {
   color: #979797;
@@ -89,6 +94,10 @@
   color: white;
 }
 .error {
-    color: red;
-    font-size: 0.8em;
-  }
+  color: red;
+  font-size: 0.8em;
+}
+.successMessage{
+    font-size: 2em;
+    color: #d61431;
+}
