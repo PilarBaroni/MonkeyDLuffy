@@ -1,13 +1,5 @@
-<style>
-h1 {
-    color: #ff0000; 
-}
 
-h2 {
-    color: #e9b965; 
-}
-</style>
-# Monkey D. Luffy - Proyecto Técnico
+<h1 style="color:#ff0000">Monkey D. Luffy - Proyecto Técnico</h1>
 
 ## Descripción
 Este proyecto es una aplicación web inspirada en el personaje de Monkey D. Luffy del anime One Piece. Es un proyecto técnico diseñado para demostrar mis habilidades como desarrolladora frontend, utilizando tecnologías como Next.js, React, y otras herramientas modernas de desarrollo web.
