@@ -12,7 +12,7 @@ export const SideBar = () => {
         rel="noopener noreferrer"
         className={styles.icon}
       >
-        <Image src={LogoIg} alt="Logo" width={30} height={30} />
+        <Image src={LogoIg} alt="Logo" width={30} height={30} className={styles.img} />
       </a>
       <a
         href="https://www.tiktok.com/search?lang=es&q=one%20piece&t=1720112782578"
@@ -20,7 +20,7 @@ export const SideBar = () => {
         rel="noopener noreferrer"
         className={styles.icon}
       >
-        <Image src={LogoTiktok} alt="Logo" width={30} height={30} />
+        <Image src={LogoTiktok} alt="Logo" width={30} height={30} className={styles.img} />
       </a>
     </div>
   );

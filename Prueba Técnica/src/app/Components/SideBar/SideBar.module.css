@@ -21,14 +21,17 @@
   transition: ease-in-out 0.4s;
 }
 @media (max-width: 770px) {
-  .sidebar {
-    right: auto;
-    left: 0; 
-    width: 4%;
+  .sidebar { 
+    width: 2%;
   }
 }
 @media (max-width: 425px) {
-  .sidebar {
-    width: 3%;
+  .sidebar{
+    width: 6%;
   }
+  .img{
+    height: 3em;
+    width: 3em;
+  }
+
 }

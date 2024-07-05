@@ -26,6 +26,10 @@
   .div {
    padding: 10%;
    height: 150vh;
-
+   
+  }
+  .section{
+   margin-bottom: -2em;
+   background-color: whitesmoke;
   }
 }

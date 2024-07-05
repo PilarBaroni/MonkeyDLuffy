@@ -120,33 +120,30 @@
     width: 120%;
     right: 15%;
   }
-
 }
 @media (max-width: 768px) {
   .carrousel {
     width: 140%;
     right: 25%;
   }
-
-
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .carrousel {
-    width: 280%;
-    right: 45%;
+    width: 320%;
+    right: 65%;
   }
   .arrowLeft,
   .arrowRight {
-  display: none;
+    display: none;
   }
-  .punto{
+  .punto {
     height: 2em;
     width: 2em;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .carrousel {
-    width: 350%;
-    right: 60%;
+    width: 330%;
+    right: 70%;
   }
 }
