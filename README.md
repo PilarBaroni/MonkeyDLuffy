@@ -1,3 +1,12 @@
+<style>
+h1 {
+    color: #ff0000; 
+}
+
+h2 {
+    color: #e9b965; 
+}
+</style>
 # Monkey D. Luffy - Proyecto Técnico
 
 ## Descripción
