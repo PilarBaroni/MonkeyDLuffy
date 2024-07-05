@@ -1,4 +1,4 @@
-
+![Rojo](lo que quieras)
 # <span style="color: red;">Monkey D. Luffy - Proyecto Técnico</span>
 
 ## Descripción
