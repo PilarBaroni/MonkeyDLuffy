@@ -34,12 +34,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/Prueba Técnica/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/Prueba Técnica/package.json" ]; then
+          if [ -f "${{ github.workspace }}/Prueba Técnica/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
@@ -61,10 +56,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/Prueba Técnica/package-lock.json', '**/Prueba Técnica/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+            Prueba Técnica/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('Prueba Técnica/package-lock.json', 'Prueba Técnica/yarn.lock') }}-${{ hashFiles('Prueba Técnica/**/*.js', 'Prueba Técnica/**/*.jsx', 'Prueba Técnica/**/*.ts', 'Prueba Técnica/**/*.tsx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/Prueba Técnica/package-lock.json', '**/Prueba Técnica/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('Prueba Técnica/package-lock.json', 'Prueba Técnica/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: "Prueba Técnica"
