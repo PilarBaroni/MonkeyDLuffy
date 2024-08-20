@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { monserrat, LilitaOne, AbrilFatface } from "../Fonts/fonts";
+import { LilitaOne, AbrilFatface } from "../Fonts/fonts";
 import styles from "./cabecera.module.css";
-import luffyCabecera from "../../../../public/customers/luffyCabecera.gif";
+import luffyCabecera from "../Cabecera/LuffyCabecera.gif";
 export const Cabecera = () => {
   return (
     <div className={styles.container}>
