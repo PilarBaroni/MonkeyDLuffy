@@ -1,6 +1,7 @@
 import { Navbar } from "./Components/Navbar/Navbar";
 import styles from "./index.module.css";
 import "./global.css";
+
 export const metadata = {
   title: "Monkey D Luffy",
   description: "Portafolio de Monkey D Luffy",
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Portafolio de Monkey D Luffy"
         />
-        <meta property="og:image" content="../../public/LuffyPag.png" />
+        <meta property="og:image" content="https://monkey-d-luffy.vercel.app/" />
         <meta property="og:url" content="https://monkey-d-luffy.vercel.app/" />
         <meta property="og:type" content="website" />
         <title>Monkey D Luffy</title>
