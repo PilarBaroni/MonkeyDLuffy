@@ -140,5 +140,6 @@
   }
   .container {
     height: 250vh;
+    width: 110vw;
   }
 }

@@ -146,7 +146,9 @@
 }
 @media (max-width: 375px) {
   .container {
-    height: 200vh;
+    height: 230vh;
+    width: 220vw;
+    margin-left: 20px;
   }
 }
 @media (max-width: 320px) {

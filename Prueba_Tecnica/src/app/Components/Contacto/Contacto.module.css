@@ -225,3 +225,43 @@
     margin-bottom: 80vh;
   }
 }
+@media (max-width: 375px) {
+  .contactSection {
+    width: 130vh;
+    height: 180vh;
+  }
+  .containerContact {
+    height: 170vh;
+    flex-direction: column;
+  }
+  .contactForm {
+    width: 130vh;
+    height: 80%;
+  }
+  .contactForm h1 {
+    font-size: 3em;
+  }
+  .contactForm h4 {
+    font-size: 2em;
+  }
+  .exclamacion {
+    font-size: 1.8em;
+  }
+  .inputGroup input,
+  .inputGroup textarea {
+    padding: 0.8em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .btnSubmit {
+    padding: 10px 20px;
+    margin: 2em;
+    font-size: 1.5em;
+  }
+  .successMessage{
+    font-size: 2.5em;
+  }
+  .successContainer{
+    margin-bottom: 80vh;
+  }
+}
