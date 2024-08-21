@@ -8,6 +8,12 @@ export const metadata = {
   openGraph: {
     title: "Monkey D Luffy",
     description: "Portafolio de Monkey D Luffy.",
+    images: [
+      {
+        url:"https://monkey-d-luffy.vercel.app/",
+        alt: "Portafolio de Monkey D Luffy",
+      },
+    ],
     url: "https://monkey-d-luffy.vercel.app/",
     type: "website",
   },
