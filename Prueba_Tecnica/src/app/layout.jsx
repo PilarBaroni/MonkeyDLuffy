@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Portafolio de Monkey D Luffy"
         />
-        <meta property="og:image" content="/LuffyPag.png" />
+        <meta property="og:image" content="./LuffyPag.png" />
         <meta property="og:url" content="https://monkey-d-luffy.vercel.app/" />
         <meta property="og:type" content="website" />
         <title>Monkey D Luffy</title>
