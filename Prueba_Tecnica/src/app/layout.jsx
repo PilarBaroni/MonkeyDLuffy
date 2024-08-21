@@ -10,7 +10,9 @@ export const metadata = {
     description: "Portafolio de Monkey D Luffy.",
     images: [
       {
-        url: "https://monkey-d-luffy.vercel.app/",
+        url: {
+          LuffyPag,
+        },
         width: 1200,
         height: 630,
         alt: "Portafolio de Monkey D Luffy",
@@ -28,7 +30,10 @@ export default function RootLayout({ children }) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Monkey D Luffy" />
-        <meta property="og:description" content="Portafolio de Monkey D Luffy" />
+        <meta
+          property="og:description"
+          content="Portafolio de Monkey D Luffy"
+        />
         <meta property="og:image" content={LuffyPag} />
         <meta property="og:url" content="https://monkey-d-luffy.vercel.app/" />
         <meta property="og:type" content="website" />
