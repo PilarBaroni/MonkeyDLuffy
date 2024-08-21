@@ -10,13 +10,13 @@ export const metadata = {
     description: "Portafolio de Monkey D Luffy.",
     images: [
       {
-        url: "https://portafolio-beige-one.vercel.app/YOPort.png",
+        url: "https://monkey-d-luffy.vercel.app/",
         width: 1200,
         height: 630,
         alt: "Portafolio de Monkey D Luffy",
       },
     ],
-    url: "https://portafolio-beige-one.vercel.app/",
+    url: "https://monkey-d-luffy.vercel.app/",
     type: "website",
   },
 };
